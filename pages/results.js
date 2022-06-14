@@ -4,16 +4,16 @@ import { useState } from 'react';
 // import puppeteer from 'puppeteer';
 
 function results() {
-	const router = useRouter();
+	// const router = useRouter();
 
-	const {
-		query: { zipCode, state },
-	} = router;
+	// const {
+	// 	query: { zipCode, state },
+	// } = router;
 
-	const props = {
-		zipCode,
-		state,
-	};
+	// const props = {
+	// 	zipCode,
+	// 	state,
+	// };
 
 	const [link, setLink] = useState(
 		`https://www.irs.gov/efile-index-taxpayer-search?zip=${props.zipCode}&state=${props.state}`
