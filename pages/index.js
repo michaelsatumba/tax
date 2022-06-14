@@ -10,18 +10,18 @@ export default function Home() {
 	const [state, setState] = useState(6);
 
 	const submit = (e) => {
-		e.preventDefault();
-		// router.push();
-		router.push(
-			{
-				pathname: '/results',
-				query: { zipCode, state },
-			},
-			'/results'
-		);
-		// open(
-		// 	`https://www.irs.gov/efile-index-taxpayer-search?zip=${zipCode}&state=${state}`
+		// e.preventDefault();
+		// // router.push();
+		// router.push(
+		// 	{
+		// 		pathname: '/results',
+		// 		query: { zipCode, state },
+		// 	},
+		// 	'/results'
 		// );
+		open(
+			`https://www.irs.gov/efile-index-taxpayer-search?zip=${zipCode}&state=${state}`
+		);
 	};
 
 	return (
@@ -48,7 +48,7 @@ export default function Home() {
 							onChange={(e) => setZipCode(e.target.value)}
 							className="border-2"
 						/>
-						<label for="cars">State</label>
+						<label htmlfor="cars">State</label>
 						<select
 							id="states"
 							name="states"
@@ -228,7 +228,6 @@ export default function Home() {
 						<button
 							className="bg-blue-300 rounded-md px-2 py-1 m-2"
 							onClick={submit}
-							// onClick={}
 						>
 							Enter
 						</button>
