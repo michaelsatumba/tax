@@ -6,9 +6,9 @@ import { useState } from 'react';
 function results() {
 	// const router = useRouter();
 
-	const {
-		query: { zipCode, state },
-	} = router;
+	// const {
+	// 	query: { zipCode, state },
+	// } = router;
 
 	const props = {
 		zipCode,
