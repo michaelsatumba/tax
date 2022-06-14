@@ -48,7 +48,7 @@ export default function Home() {
 							onChange={(e) => setZipCode(e.target.value)}
 							className="border-2"
 						/>
-						<label htmlfor="cars">State</label>
+						<label htmlFor="cars">State</label>
 						<select
 							id="states"
 							name="states"
